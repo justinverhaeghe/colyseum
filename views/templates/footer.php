@@ -1,4 +1,4 @@
-<footer class="text-center pt-2 pb-1">
+<footer class="text-center bg-primary text-light pt-2 pb-1">
     <p>By Forza &copy; 2023 - Réalisé dans le cadre d'un projet d'étude - La Manu</p>
 </footer>
 
