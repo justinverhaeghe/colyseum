@@ -10,22 +10,22 @@
             <p>Afficher tous les clients.</p>
 
             <div class="col-12 text-center text-dark d-flex justify-content-center table-wrapper">
-                <table class="fl-table mb-3">
+                <table class="fl-table rounded mb-3">
                     <thead>
                         <tr>
-                            <th class="bg-primary col">Nom</th>
+                            <th class="bg-primary rounded-start col">Nom</th>
                             <th class="bg-primary col">Prénom</th>
-                            <th class="bg-primary col">Date de Naissance</th>
+                            <th class="bg-primary rounded-end col">Date de Naissance</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php
-                        foreach ($datas as $data) { ?>
-                        <tr>
-                            <td><?= $data['lastName'] ?></td>
-                            <td><?= $data['firstName'] ?></td>
-                            <td><?= $data['birthDate'] ?></td>
-                        </tr>
+                        foreach ($clients as $client) { ?>
+                            <tr>
+                                <td><?= $client->lastName ?></td>
+                                <td><?= $client->firstName ?></td>
+                                <td><?= $client->birthDate ?></td>
+                            </tr>
                         <?php } ?>
                     </tbody>
                 </table>

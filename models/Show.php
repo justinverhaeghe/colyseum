@@ -1,12 +1,13 @@
 <?php
 
+require_once __DIR__ . '/../config/database.php';
 
-function getShowList($conn)
+function getShowType(): array
 {
-    $showList = "SELECT * FROM shows";
-    $displayShow = $conn->prepare($showList);
-    $displayShow->execute();
-    $datas = $displayShow->fetchAll();
+    $pdo = connect();
+    $sql = "SELECT * FROM `shows` ORDER BY `title`;";
+    $sth = $pdo->query($sql);
+    $shows = $sth->fetchAll(PDO::FETCH_OBJ);
 
-    return $datas;
+    return $shows;
 }

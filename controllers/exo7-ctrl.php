@@ -1,11 +1,11 @@
 <?php
 
-require_once __DIR__ . '/../models/Showtype.php';
+require_once __DIR__ . '/../models/Client.php';
 
 try {
-    $showtypes = getShowType();
-    $ex = 2;
-    $title = 'Colyseum - Exercice 2';
+    $ex = 7;
+    $title = 'Colyseum - Exercice 7';
+    $datas = getListWithCard();
 } catch (\Throwable $th) {
     $error = $th->getMessage();
     include __DIR__ . '/../views/templates/header.php';
@@ -16,8 +16,7 @@ try {
 }
 
 
-
 include __DIR__ . '/../views/templates/header.php';
 include __DIR__ . '/../views/templates/navbar.php';
-include __DIR__ . '/../views/pages/exo2.php';
+include __DIR__ . '/../views/pages/exo7.php';
 include __DIR__ . '/../views/templates/footer.php';

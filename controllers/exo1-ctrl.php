@@ -1,9 +1,10 @@
 <?php
 
-require_once __DIR__ . '/../config/database.php';
 require_once __DIR__ . '/../models/Client.php';
 
-$datas = getCustomerList($conn);
+$clients = getCustomerList();
+$ex = 1;
+$title = 'Colyseum - Exercice 1';
 
 include __DIR__ . '/../views/templates/header.php';
 include __DIR__ . '/../views/templates/navbar.php';

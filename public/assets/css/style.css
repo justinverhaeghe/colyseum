@@ -36,3 +36,8 @@
 .fl-table thead th {
     color: #ffffff;
 }
+
+.list li {
+    color: white;
+    list-style: none;
+}

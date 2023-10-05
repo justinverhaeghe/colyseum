@@ -13,23 +13,16 @@
                 <table class="fl-table mb-3">
                     <thead>
                         <tr>
-                            <th class="bg-primary col">Titre</th>
-                            <th class="bg-primary col">Performeur</th>
-                            <th class="bg-primary col">Date</th>
-                            <th class="bg-primary col">Durée</th>
-                            <th class="bg-primary col">Heure</th>
+                            <th class="bg-primary">Type</th>
+
                         </tr>
                     </thead>
                     <tbody>
                         <?php
-                        foreach ($datas as $data) { ?>
-                        <tr>
-                            <td><?= $data['title'] ?></td>
-                            <td><?= $data['performer'] ?></td>
-                            <td><?= $data['date'] ?></td>
-                            <td><?= $data['duration'] ?></td>
-                            <td><?= $data['startTime'] ?></td>
-                        </tr>
+                        foreach ($showtypes as $data) { ?>
+                            <tr>
+                                <td><?= $data->type ?></td>
+                            </tr>
                         <?php } ?>
                     </tbody>
                 </table>
