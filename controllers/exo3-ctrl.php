@@ -3,7 +3,7 @@
 require_once __DIR__ . '/../models/Client.php';
 
 try {
-    $clients = getclientLimit20();
+    $clients = getClientLimit20();
     $ex = 3;
     $title = 'Colyseum - Exercice 3';
 } catch (\Throwable $th) {

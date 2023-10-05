@@ -7,7 +7,7 @@ function getShowType(): array
     $pdo = connect();
     $sql = "SELECT `type` FROM `showtypes`;";
     $sth = $pdo->query($sql);
-    $showtypes = $sth->fetchAll(PDO::FETCH_OBJ);
+    $showtypes = $sth->fetchAll();
 
     return $showtypes;
 }

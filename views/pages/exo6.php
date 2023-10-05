@@ -13,9 +13,11 @@
             <div class="col-12 text-center text-dark d-flex justify-content-center list pt-5">
                 <ul>
                     <?php
-                    foreach ($shows as $show) { ?>
+                    foreach ($shows as $show) {
+                        $date = new DateTimeImmutable($show->date);
+                        $dateformated = $date->format('d/m/Y');  ?>
                         <li>
-                            <?= $show->title ?> par <?= $show->performer ?>, le <?= $show->date ?> à
+                            <?= $show->title ?> par <?= $show->performer ?>, le <?= $dateformated ?> à
                             <?= $show->startTime ?>
                         </li>
                     <?php } ?>

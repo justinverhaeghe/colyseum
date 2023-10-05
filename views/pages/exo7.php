@@ -28,17 +28,17 @@
                     <tbody>
                         <?php
                         foreach ($datas as $data) { ?>
-                            <tr>
-                                <td><?= $data->lastName ?></td>
-                                <td><?= $data->firstName ?></td>
-                                <?php if ($data->type == 'Fidélité') { ?>
-                                    <td>Oui</td>
-                                    <td><?= $data->cardNumber ?></td>
-                                <?php } else { ?>
-                                    <td>Non</td>
-                                    <td></td>
+                        <tr>
+                            <td><?= $data->lastName ?></td>
+                            <td><?= $data->firstName ?></td>
+                            <?php if ($data->type == 'Fidélité') { ?>
+                            <td>Oui</td>
+                            <td><?= $data->cardNumber ?></td>
+                            <?php } else { ?>
+                            <td>Non</td>
+                            <td>
                                 <?php } ?>
-                            </tr>
+                        </tr>
                         <?php } ?>
                     </tbody>
                 </table>
